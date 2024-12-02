@@ -19,6 +19,9 @@ app.use(`/borrow`, borrowRoute)
 const adminRoute = require(`./routes/admin.route`)
 app.use(`/admin`, adminRoute)
 
+const auth = require(`./routes/auth.route`)
+app.use(`/auth`, auth)
+
 // run server based on defined port
 app.listen(PORT, () => {
     console.log(`Server of School's Library runs on port ${PORT}`)
